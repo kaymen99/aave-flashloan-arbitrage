@@ -46,5 +46,4 @@ To start an arbitrage on the mainnet fork (for testing purposes only, you can al
    ```sh
    brownie run scripts/flashloan_arbitrage.py --network=mainnet-fork
    ```
-   ```
 
