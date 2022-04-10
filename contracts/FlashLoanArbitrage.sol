@@ -218,8 +218,7 @@ contract FlashLoanArbitrage is FlashLoanReceiverBase {
         bytes calldata params
     ) external override returns (bool) {
         //
-        // This contract now has the funds requested.
-        // Your logic goes here.
+        // Try to do arbitrage with the flashloan amount.
         //
         makeArbitrage();
         // At the end of your logic above, this contract owes
@@ -273,9 +272,6 @@ contract FlashLoanArbitrage is FlashLoanReceiverBase {
         _flashloan(assets, amounts);
     }
 
-    /*
-     *  Flash loan 100000000000000000 wei (0.1 ether) worth of `_asset`
-     */
     function flashloan(address _asset, uint256 _amount) public onlyOwner {
         bytes memory data = "";
 
