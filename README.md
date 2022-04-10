@@ -2,7 +2,13 @@
 This a smart contract for performing arbitrage with AAVE flashloan between Uniswap &amp; Sushiswap
 
 ## Features:
-The smart contract FlashloanArbitrage alows a user to deposit WETH and make an arbitrage between the 2 exchanges and ensures that the operation is always profitable by checking that the price difference is always higher than the payed fees
+The smart contract FlashloanArbitrage alows a user to deposit WETH and make an arbitrage between the 2 exchanges and ensures that the operation is always profitable by checking that the price difference is always higher than the payed fees.
+
+## Built With:
+
+* [Solidity](https://docs.soliditylang.org/)
+* [Brownie](https://eth-brownie.readthedocs.io)
+* [OpenZeppelin](https://docs.openzeppelin.com)
 
 ## Usage:
 
