@@ -1,0 +1,40 @@
+dotenv: .env
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+
+dependencies:
+  - "aave/protocol-v2@1.0.1"
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+
+compiler:
+  solc:
+    remappings:
+      - "@aave=aave/protocol-v2@1.0.1"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+
+networks:
+  default: mainnet-fork
+  mainnet-fork:
+    uniswap-router: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    sushiswap-router: "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F"
+    shibaswap-router: "0x03f7724180AA6b939894B5Ca4314783B0b36b329"
+    provider: "0xb53c1a33016b2dc2ff3653530bff1848a515c8c5"
+    weth-token: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    dai-token: "0x6b175474e89094c44da98b954eedeac495271d0f"
+  mainnet-fork-dev:
+    uniswap-router: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    sushiswap-router: "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F"
+    shibaswap-router: "0x03f7724180AA6b939894B5Ca4314783B0b36b329"
+    provider: "0xb53c1a33016b2dc2ff3653530bff1848a515c8c5"
+    weth-token: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    dai-token: "0x6b175474e89094c44da98b954eedeac495271d0f"
+  kovan:
+    uniswap-router: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    sushiswap-router: "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F"
+    provider: "0x88757f2f99175387ab4c6a4b3067c77a695b0349"
+    weth-token: "0xd0a1e359811322d97991e03f863a0c30c2cf029c"
+    dai-token: "0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD"
+    dai-price-feed: "0x22B58f1EbEDfCA50feF632bD73368b2FdA96D541"
+
+    
