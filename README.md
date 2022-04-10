@@ -23,7 +23,7 @@ The smart contract FlashloanArbitrage alows a user to deposit WETH and make an a
    
 3. Clone the repo:
    ```sh
-   git clone https://github.com/Aymen1001/uniswap-sushiswap-arbitrage.git
+   git clone https://github.com/Aymen1001/aave-flashloan-arbitrage.git
    cd aave-flashloan-arbitrage
    ```
 
@@ -38,7 +38,7 @@ The smart contract FlashloanArbitrage alows a user to deposit WETH and make an a
 
 To start an arbitrage on the mainnet fork (for testing purposes only, you can also use the kovan testnet) you just need to run the command :
    ```sh
-   brownie run scripts/arbitrage.py --network=mainnet-fork
+   brownie run scripts/flashloan_arbitrage.py --network=mainnet-fork
    ```
    ```
 
