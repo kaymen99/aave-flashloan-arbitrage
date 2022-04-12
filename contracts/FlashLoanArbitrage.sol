@@ -170,7 +170,8 @@ contract FlashLoanArbitrage is FlashLoanReceiverBase {
         // so gain made must be greater than 2 * 0.3% * arbitrage_amount
 
         // difference in ETH
-        uint256 difference = (higherPrice - lowerPrice) / higherPrice;
+        uint256 difference = ((higherPrice - lowerPrice) * 10**18) /
+            higherPrice;
 
         uint256 payed_fee = (2 * (amountIn * 3)) / 1000;
 
