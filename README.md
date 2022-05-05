@@ -29,7 +29,11 @@ The first is for the arbitrage logic and deposit and withdraw functionalities an
     ```
     pip install eth-brownie
     ```
-   
+   Install [ganache-cli](https://www.npmjs.com/package/ganache-cli): 
+   ```sh
+    npm install -g ganache-cli
+    ```
+    
 3. Clone the repo:
    ```sh
    git clone https://github.com/Aymen1001/aave-flashloan-arbitrage.git
