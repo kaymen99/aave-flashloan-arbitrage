@@ -28,6 +28,7 @@ def deploy():
         {"from": account}
     )
 
+    # Put here the amount of ETH you want to deposit
     amount = toWei(5)
 
     approve_erc20(weth_token, arbitrage.address, amount, account)
@@ -40,8 +41,10 @@ def deploy():
 
     flash_tx = arbitrage.flashloan['address,uint'](weth_token, toWei(20), {"from": account})
     flash_tx.wait(1)
-
-    print("View your flashloan tx here: " + ETHERSCAN_TX_URL.format(flash_tx.txid))
+    
+    
+    if network.show_active() == "kovan":
+        print("View your flashloan tx here: " + ETHERSCAN_TX_URL.format(flash_tx.txid))
 
 
 
