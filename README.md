@@ -36,7 +36,7 @@ The first is for the arbitrage logic and deposit and withdraw functionalities an
     
 3. Clone the repo:
    ```sh
-   git clone https://github.com/Aymen1001/aave-flashloan-arbitrage.git
+   git clone https://github.com/kaymen99/aave-flashloan-arbitrage.git
    cd aave-flashloan-arbitrage
    ```
 
